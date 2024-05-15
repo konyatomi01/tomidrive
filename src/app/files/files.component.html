@@ -1,0 +1,47 @@
+
+<app-userinfo></app-userinfo>
+<input type="file" #fileInput style="display: none;" (change)="onFileSelected($event)">
+<div id="full">
+    <div id="nav">
+        <button *ngIf="path!=''" id="back-button" (click)="back()">
+            <img id="back" src="../../assets/back.png" alt="" srcset="">
+        </button>
+        <h2 id="path">{{path}}</h2>
+    </div>
+    <h1 *ngIf="folders.length>0">Folders:</h1>
+
+    <div *ngIf="isLoading">
+        <p>Loading folders...</p>
+      </div>
+      
+      <div *ngIf="!isLoading && folders.length > 0">
+        <ul id="folder-ul">
+          <button id="folder-button" *ngFor="let file of folders" (click)="folderClick(file.name)">
+            <img src="../../assets/folder.png" alt="" srcset="">
+            {{ file.name }}
+          </button>
+        </ul>
+      </div>
+
+<h1 *ngIf="files.length>0">Files:</h1>
+<div *ngIf="isLoading">
+    <p>Loading files...</p>
+  </div>
+  
+  <div *ngIf="!isLoading && files.length > 0">
+    <ul id="file-ul">
+      <button id="file-button" *ngFor="let file of files" (click)="downloadFile(file.name)">
+          
+        {{ file.name }}
+      </button>
+    </ul>
+  </div>
+  
+  <div *ngIf="!isLoading && files.length === 0 && folders.length ===0">
+    <p>This is an empty folder.</p>
+  </div>
+</div>
+<div id="buttons">
+    <button id="new-folder-button" (click)="newFolder()">New Folder</button>
+    <button id="upload-button" (click)="selectFile()">Upload File</button>
+</div>

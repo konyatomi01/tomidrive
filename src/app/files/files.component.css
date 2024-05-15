@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Riot&family=Single+Day&display=swap');
+
+
+#full {
+    width: 100vw;
+    height: 65vh;
+    border-image: linear-gradient(to right, green, red);
+    border-bottom: 2px solid;
+    border-image-slice: 1;
+    overflow-y: scroll;
+}
+
+#nav {
+    display: flex;
+    padding: 5px;
+}
+#path {
+    font-family: "Single Day", cursive;
+    font-size: 4vh;
+    width: 80vw;
+    text-align:start;
+    padding-left: 1vw;
+}
+#back-button {
+    
+    margin-left: 2vw;
+    background-color: white;
+    border-color: black;
+    border-radius: 32px;
+    border-width: 0.5vw;
+    color: black; 
+    
+}
+#back {
+    width: 5vw;
+    height: 5vh;
+}
+
+h1 {
+    font-family: "Single Day", cursive;
+    padding-left: 3vw;
+    font-size: 6vh;
+}
+
+p {
+    font-family: "Single Day", cursive;
+    padding-left: 3vw;
+    font-size: 6vh;
+}
+
+#buttons {
+    display: flex;
+    height: 10vh;
+    align-items: center;
+    justify-content:center;
+}
+#new-folder-button {
+    font-family: "Single Day", cursive;
+    font-size: 4vh;
+    height: 8vh;
+    width: 20vw;
+    background-color: white;
+    border-color: #32800e;
+    border-radius: 32px;
+    border-width: 0.5vw;
+    color: #32800e;
+    margin-right: 3vw;
+}
+
+#upload-button {
+    font-family: "Single Day", cursive;
+    font-size: 4vh;
+    height: 8vh;
+    width: 20vw;
+    background-color: white;
+    border-color: rgb(245, 78, 49);
+    border-radius: 32px;
+    border-width: 0.5vw;
+    color: rgb(245, 78, 49); 
+    margin-left: 3vw;
+}
+
+#folder-ul {
+    width: 90vw;
+  display: grid;
+  gap: 0.3rem;
+  grid-template-columns: repeat(auto-fit, 300px);
+  list-style-type: none;
+}
+#file-ul {
+    width: 90vw;
+  display: grid;
+  gap: 0.3rem;
+  grid-template-columns: repeat(auto-fit, 200px);
+  list-style-type: none;
+}
+
+#file-button {
+    font-family: "Single Day", cursive;
+    font-size: 2vh;
+    height: 150px;
+    width: 150px;
+    background-color: white;
+    border-color: rgb(168, 137, 50);
+    border-radius: 32px;
+    border-width: 0.5vw;
+    color: rgb(168, 137, 50); 
+    hyphens: auto;
+    word-break: break-word;
+    
+}
+#folder-button {
+    font-family: "Single Day", cursive;
+    font-size: 2vh;
+    height: 120px;
+    width: 180px;
+    background-color: white;
+    border-color: rgb(109, 168, 50);
+    border-radius: 32px;
+    border-width: 0.5vw;
+    color: rgb(109, 168, 50); 
+    hyphens: auto;
+    word-break: break-word;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+img {
+    width: 70px;
+    height: 70px;
+}

@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Riot&family=Single+Day&display=swap');
+
+#full {
+    width: 100vw;
+    height: max-content;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    border-image: linear-gradient(to right, green, red);
+    border-bottom: 2px solid;
+    border-image-slice: 1;
+}
+
+button {
+    font-family: "Single Day", cursive;
+    font-size: 3vh;
+    height: 6vh;
+    width: 15vw;
+    background-color: white;
+    border-color: rgb(245, 78, 49);
+    border-radius: 32px;
+    border-width: 0.5vw;
+    color: rgb(245, 78, 49); 
+    margin-right: 3vw;
+    align-self: center;
+    
+}
+p {
+    font-family: "Single Day", cursive;
+    padding-left: 3vw;
+    font-size: 3vh;
+}

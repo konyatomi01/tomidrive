@@ -1,0 +1,29 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Protest+Riot&family=Single+Day&display=swap');
+html, body { height: 100%; }
+body { }
+
+
+
+  nav {
+    background: linear-gradient(to right, green, red);
+    width: 100vw;
+    margin: 0;
+    border: 0;
+    
+    z-index: 1;
+  }
+  .title {
+    font-family: "Single Day", cursive;
+    width: 100vw;
+    height: 6vw;
+    font-size: 5vw;
+    text-align: center;
+    color: white;
+    margin: 0;
+    
+  }
+  #main-div {
+    margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;
+display: flex; align-items: center; justify-content: center;
+  }

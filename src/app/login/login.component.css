@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Riot&family=Single+Day&display=swap');
+
+.login-div {
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-button {
+    font-family: "Single Day", cursive;
+    font-size: 6vh;
+    height: 10vh;
+    width: 20vw;
+    background-color: white;
+    border-color: #32800e;
+    border-radius: 32px;
+    border-width: 0.5vw;
+    color: #32800e;
+}
